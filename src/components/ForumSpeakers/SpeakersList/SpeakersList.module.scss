@@ -1,0 +1,18 @@
+@import '../../../styles/mediaVariables.scss';
+
+.list {
+  display: grid;
+  margin: 0 auto;
+
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 40px;
+    margin-bottom: 250px;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    margin-bottom: 320px;
+  }
+}

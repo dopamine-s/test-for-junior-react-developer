@@ -1,0 +1,31 @@
+@import '../../styles/mediaVariables.scss';
+
+.header {
+  display: grid;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+
+  @media (min-width: $breakpoint-md) {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    width: 1050px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.button {
+  @media (max-width: $breakpoint-md) {
+    justify-self: center;
+  }
+}

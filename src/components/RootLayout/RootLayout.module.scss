@@ -1,0 +1,13 @@
+@import '../../styles/mediaVariables.scss';
+
+.main {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: 0 auto;
+  min-height: calc(100vh - 900px);
+  width: 90%;
+
+  @media (min-width: $breakpoint-md) {
+    min-height: calc(100vh - 600px);
+  }
+}

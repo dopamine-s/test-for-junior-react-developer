@@ -1,0 +1,48 @@
+@import '../../styles/mediaVariables.scss';
+
+.nav {
+  & a {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 21px;
+
+    &:hover,
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+
+  & li {
+    margin-bottom: 20px;
+  }
+}
+
+.header {
+  align-items: center;
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+
+    & li {
+      margin-right: 39px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.footer {
+  align-items: left;
+
+  @media (min-width: $breakpoint-md) {
+    & li {
+      margin-bottom: 30px;
+    }
+  }
+}

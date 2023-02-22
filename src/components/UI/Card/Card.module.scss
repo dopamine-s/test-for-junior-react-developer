@@ -1,0 +1,11 @@
+@import '../../../styles/mediaVariables.scss';
+
+.card {
+  display: grid;
+  width: 280px;
+  min-height: 640px;
+
+  @media (min-width: $breakpoint-sm) {
+    width: 330px;
+  }
+}

@@ -1,0 +1,19 @@
+.button {
+  display: grid;
+  padding: 12px 27px;
+  height: 51px;
+  width: min-content;
+  cursor: pointer;
+  color: var(--white-primary);
+  background-color: transparent;
+  border: 3px solid var(--white-primary);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  &:hover,
+  &:active {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,48 @@
+@import '../../../styles/mediaVariables.scss';
+
+.image {
+  @media (min-width: $breakpoint-sm) {
+    width: 330px;
+  }
+}
+
+.name {
+  position: relative;
+  margin: 35px 0 23px;
+  color: var(--white-primary);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    top: 40px;
+    left: 0;
+    background-color: var(--blue-primary);
+
+    @media (min-width: $breakpoint-sm) {
+      width: 243px;
+    }
+  }
+}
+
+.description {
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0 0 15px 0;
+}
+
+.link {
+  color: var(--white-primary);
+  opacity: 0.5;
+  text-decoration: underline;
+
+  &:hover {
+    opacity: 1;
+  }
+}

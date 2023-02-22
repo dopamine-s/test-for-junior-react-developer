@@ -1,0 +1,35 @@
+@import '../../../styles/mediaVariables.scss';
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: var(--color-primary);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 34px;
+
+  &:hover p,
+  &:active p {
+    opacity: 0.5;
+  }
+
+  & span {
+    align-self: center;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+
+    & span {
+      align-self: flex-start;
+    }
+  }
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 15px;
+}

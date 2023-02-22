@@ -1,0 +1,33 @@
+@import '../../styles/mediaVariables.scss';
+
+.socials {
+  & a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    border: 2px solid var(--blue-primary);
+  }
+  & a:hover {
+    opacity: 0.5;
+  }
+
+  & ul {
+    height: 100%;
+    display: flex;
+    width: 181px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    grid-column: 1/4;
+  }
+}
+
+a:hover img {
+  opacity: 0.75;
+}
+
+.icon {
+  display: block;
+  margin: 8px auto;
+}
